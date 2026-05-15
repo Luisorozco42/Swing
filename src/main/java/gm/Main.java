@@ -2,6 +2,7 @@ package gm;
 
 import com.formdev.flatlaf.FlatDarculaLaf;
 import ui.Forma;
+import ui.LoginForm;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -12,6 +13,7 @@ public class Main {
 //        Este es el final de forma por ende vamos al nuevo proyecto pequeño
 //        forma.setVisible(true);
 
-
+        LoginForm loginForm = new LoginForm();
+        loginForm.setVisible(true); 
     }
 }
