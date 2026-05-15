@@ -14,6 +14,6 @@ public class Main {
 //        forma.setVisible(true);
 
         LoginForm loginForm = new LoginForm();
-        loginForm.setVisible(true); 
+        loginForm.setVisible(true);
     }
 }
