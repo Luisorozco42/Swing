@@ -3,6 +3,8 @@ package ui;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Forma extends JFrame {
 
@@ -13,9 +15,20 @@ public class Forma extends JFrame {
 
     public Forma(){
         inicializarForma();
-        campoTexto.addActionListener(e -> { // tecnicamente se esta llamando cuando doy enter
-            System.out.println("Se ejecuto el action listener");
+//        campoTexto.addActionListener(e -> { // tecnicamente se esta llamando cuando doy enter
+//            replicarTexto();
+//        });
+        campoTexto.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                super.keyTyped(e);
+                replicarTexto();
+            }
         });
+    }
+
+    private void replicarTexto() {
+        this.replicadorLable.setText(this.campoTexto.getText());
     }
 
     private void inicializarForma() {
