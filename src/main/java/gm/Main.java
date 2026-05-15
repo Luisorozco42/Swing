@@ -8,8 +8,10 @@ import ui.Forma;
 public class Main {
     static void main() {
         FlatDarculaLaf.setup();// Laf signigica look and feel (tecnicamente es para poner en modo oscuro)
-        Forma forma = new Forma();
+//        Forma forma = new Forma();
+//        Este es el final de forma por ende vamos al nuevo proyecto pequeño
+//        forma.setVisible(true);
 
-        forma.setVisible(true);
+
     }
 }
